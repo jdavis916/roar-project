@@ -1,6 +1,6 @@
 <?php
     require_once('configs/creds.php');
-   //$dev = $users['dev'];
+   // $dev = $users['dev'];
      $dev = $users['stage'];
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
