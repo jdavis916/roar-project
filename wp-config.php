@@ -16,6 +16,10 @@ define( 'DB_PASSWORD', $dev['dbpass'] );
 define( 'DB_HOST', $dev['dbhost']  );
 //define( 'DB_HOST', 'ec2-54-177-231-14.us-west-1.compute.amazonaws.com:3306' );
 
+define('WP_SITEURL', 'http://' . $dev['dbsite']);
+define('WP_HOME', 'http://' . $dev['dbsite']);
+
+
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
 
