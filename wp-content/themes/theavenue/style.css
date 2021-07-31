@@ -2259,7 +2259,7 @@ input[type=submit].__light [class^=icon-] {
 
 .main-h-bottom-w {
     position: relative;
-    padding-top: 15px;
+    padding-top: 0px;
     padding-bottom: 15px
 }
 
