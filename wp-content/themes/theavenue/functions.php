@@ -557,7 +557,11 @@ function avenue_scripts() {
 	wp_enqueue_script('wc-add-to-cart-variation', false, array(), false, true ); // need for quick view
 
 	$template_dir_uri = get_template_directory_uri();
+	//blog responsiveness
+	/*wp_enqueue_script('scripts-blog-page', 
+			get_template_directory_uri().'/scripts-blog-page.js');*/
 
+			
 	// wp_register_script( 'requestAnimationFrame', $template_dir_uri . '/scripts/vendor/requestAnimationFrame/requestAnimationFrame.js', array('jquery'), false, true );
 	// wp_register_script( 'smooth-scroll', $template_dir_uri . '/scripts/vendor/jquery-smooth-scroll/jquery.smooth-scroll.min.js', array('jquery'), false, true );
 	wp_register_script( 'smooth-scroll_and_requestAnimationFrame', $template_dir_uri . '/scripts/vendor/jquery.smooth-scroll_and_requestAnimationFrame.min.js', array('jquery'), false, true );
