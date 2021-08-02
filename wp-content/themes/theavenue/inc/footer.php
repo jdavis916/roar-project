@@ -1,6 +1,6 @@
 <div class="main-f-top">
 	<div class="container">
-		<div class="row">
+		<div class="row" id="footer-section">
 			<?php if (get_theme_option('footer--col_1') && is_active_sidebar('footer_1')) { ?>
 				<div class="col-sm-<?php echo absint(get_theme_option('footer--col_1')); ?>">
 					<?php dynamic_sidebar('footer_1'); ?>
