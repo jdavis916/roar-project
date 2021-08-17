@@ -20506,6 +20506,10 @@ body .nf-error .ninja-forms-field {
 div:has(){
 
 }
+/*attempt to get homepage hero at full width*/
+/*.main-cnts-w > div{
+    padding:  0 !important;
+}*/
 @media(max-width: 992px){
     /*#pgc-51-6-0{
         grid-template-columns: 1fr 1fr;

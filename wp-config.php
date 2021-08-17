@@ -1,7 +1,7 @@
 <?php
     require_once('configs/creds.php');
-     // $dev = $users['dev'];
-    $dev = $users['stage'];
+     $dev = $users['dev'];
+    // $dev = $users['stage'];
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', $dev['dbname'] );
@@ -68,6 +68,12 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', false );
 define('WP_DEBUG_DISPLAY', false);
+
+
+//increases upload size
+@ini_set( 'upload_max_size' , '20M' );
+@ini_set( 'post_max_size', '13M');
+@ini_set( 'memory_limit', '15M' );
 
 /* That's all, stop editing! Happy publishing. */
 
