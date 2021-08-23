@@ -11,16 +11,21 @@
  * Text Domain:  avenue
  * Domain Path:  /languages/
  */
-
-html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+@font-face {
+  font-family: lato;
+  src: url(inc/fonts/Lato/Lato-Light.ttf);
 }
+@font-face {
+  font-family: montserrat;
+  src: url(inc/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
 
 body {
     margin: 0
 }
+
+
 
 article,
 aside,
@@ -20527,8 +20532,22 @@ div:has(){
     }
 }*/
 
+html {
+    font-family: lato;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+h2, h3{
+    font-size: 2rem;
+    font-family: montserrat;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 
-
+}
+.heroTxt .pageHeader > h3{
+    font-family: lato;
+    font-size: 5rem;
+}
 @media(max-width: 992px){
     /*#pgc-51-6-0{
         grid-template-columns: 1fr 1fr;
@@ -20568,4 +20587,9 @@ div:has(){
     #pgc-w6102ec137fc1b-1-0{
         flex-direction: column;
     }
+}
+@media (max-width: 510px){
+   h2, h3{
+    font-size: 1.4rem;
+   } 
 }
